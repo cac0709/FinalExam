@@ -20,6 +20,9 @@ public class Main {
 			System.out.println(m.getId()+"."+m.getName());
 			
 		}
+		for(Menu m : menus){
+			
+		
 		System.out.println("8.結算");
 		Scanner scanner = new Scanner(System.in);		
 		System.out.println("請輸入餐點編號:");
@@ -27,22 +30,22 @@ public class Main {
 		System.out.println("請輸入數量:");
 		int n = scanner.nextInt();
 		System.out.println("目前餐點");
-		System.out.println();
+		System.out.println(n+"份"+ m.getName());
 		
 		
 		
 		
 		
 		
-		for(Menu m : menus){
+		
 			System.out.println((n*m.getPrice()));
 			break;
 		}
 		
 		
-		
-		
 	}
+		
+	
 	
 
 
